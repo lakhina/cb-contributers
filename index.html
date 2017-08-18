@@ -1,0 +1,357 @@
+---
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="//fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/main.css" media="screen">
+    <link rel="stylesheet" href="ism/css/my-slider.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/popup.css">
+    <link rel="stylesheet" href="stylesheets/contributors.css">
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Coding Blocks Greater Noida Contributers</title>
+</head>
+<body>
+
+<!-- Main Content -->
+    <section class="main-content">
+
+        <div class="container">
+
+            <!-- Mentors Section -->
+            <section class="mentors" id="mentors" href="#mentors">
+                <div class="row mentors-wrapper">
+                    <!-- Start ignoring BootLintBear -->
+                    <h2>Open Source Enthusiasts</h2>
+                    <!-- Stop ignoring -->
+                    {% for m in site.data.mentors %}
+                    {% assign mentor = m[1] %}
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="avatar">
+                                {% if mentor.image %}
+                                <img src="images/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
+                                {% else %}
+                                <img src="images/mentors/member.png" alt="{{ mentor.name }}">
+                                {% endif %}
+                                <div class="social">
+                                    Show more<br>
+                                    information
+                                </div>
+                                <p style="display: inline-block;">{{mentor.name}}</p>
+                            </div>
+                        </div>
+                        {% include popup.html person=mentor who='mentor' %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            <!-- End of Mentor Section -->
+            
+    </section>
+<!-- End of Main Content -->
+
+
+<!-- Scripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="javascripts/js-yaml.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCrmk_lnhYhLIqEzLAYSSfIyTzEHP0Jssc&callback=initMap" async defer></script>
+    <!-- Start ignoring JSHintBear, LineLengthBear -->
+    <script>
+        window.initMap = function() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 2,
+                    scrollwheel: false,
+                    center: {
+                      lat: 0,
+                      lng: 0
+                    },
+                    styles: [{
+                      "elementType": "geometry",
+                      "stylers": [{
+                              "color": "#1d2c4d"
+                      }]
+            }, {
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#8ec3b9"
+                    }]
+            }, {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "color": "#1a3646"
+                    }]
+            }, {
+                    "featureType": "administrative",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+            }, {
+                   "featureType": "administrative.country",
+                   "elementType": "geometry.stroke",
+                   "stylers": [{
+                        "color": "#4b6878"
+                   }]
+            }, {
+                   "featureType": "administrative.land_parcel",
+                   "stylers": [{
+                        "visibility": "off"
+                   }]
+            }, {
+                      "featureType": "administrative.land_parcel",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#64779e"
+                      }]
+            }, {
+                      "featureType": "administrative.neighborhood",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "administrative.province",
+                      "elementType": "geometry.stroke",
+                      "stylers": [{
+                        "color": "#4b6878"
+                      }]
+            }, {
+                      "featureType": "landscape.man_made",
+                      "elementType": "geometry.stroke",
+                      "stylers": [{
+                        "color": "#334e87"
+                      }]
+            }, {
+                      "featureType": "landscape.natural",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#023e58"
+                      }]
+            }, {
+                      "featureType": "poi",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "poi",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#283d6a"
+                      }]
+            }, {
+                      "featureType": "poi",
+                      "elementType": "labels.text",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "poi",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#6f9ba5"
+                      }]
+            }, {
+                     "featureType": "poi",
+                     "elementType": "labels.text.stroke",
+                     "stylers": [{
+                        "color": "#1d2c4d"
+              }]
+            }, {
+                      "featureType": "poi.park",
+                      "elementType": "geometry.fill",
+                      "stylers": [{
+                        "color": "#023e58"
+                      }]
+            }, {
+                      "featureType": "poi.park",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#3C7680"
+                      }]
+            }, {
+                      "featureType": "road",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#304a7d"
+                      }]
+            }, {
+                      "featureType": "road",
+                      "elementType": "labels",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "road",
+                      "elementType": "labels.icon",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "road",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#98a5be"
+                      }]
+            }, {
+                      "featureType": "road",
+                      "elementType": "labels.text.stroke",
+                      "stylers": [{
+                        "color": "#1d2c4d"
+                      }]
+            }, {
+                      "featureType": "road.arterial",
+                      "elementType": "labels",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "road.highway",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#2c6675"
+                      }]
+            }, {
+                      "featureType": "road.highway",
+                      "elementType": "geometry.stroke",
+                      "stylers": [{
+                        "color": "#255763"
+                      }]
+            }, {
+                      "featureType": "road.highway",
+                      "elementType": "labels",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "road.highway",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#b0d5ce"
+                      }]
+            }, {
+                      "featureType": "road.highway",
+                      "elementType": "labels.text.stroke",
+                      "stylers": [{
+                        "color": "#023e58"
+                      }]
+            }, {
+                      "featureType": "road.local",
+                      "stylers": [{
+                        "visibility": "off"
+                    }]
+            }, {
+                      "featureType": "transit",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "transit",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#98a5be"
+                      }]
+            }, {
+                      "featureType": "transit",
+                      "elementType": "labels.text.stroke",
+                      "stylers": [{
+                        "color": "#1d2c4d"
+                      }]
+            }, {
+                      "featureType": "transit.line",
+                      "elementType": "geometry.fill",
+                      "stylers": [{
+                        "color": "#283d6a"
+                      }]
+            }, {
+                      "featureType": "transit.station",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#3a4762"
+                      }]
+            }, {
+                      "featureType": "water",
+                      "elementType": "geometry",
+                      "stylers": [{
+                        "color": "#0e1626"
+                      }]
+            }, {
+                      "featureType": "water",
+                      "elementType": "labels.text",
+                      "stylers": [{
+                        "visibility": "off"
+                      }]
+            }, {
+                      "featureType": "water",
+                      "elementType": "labels.text.fill",
+                      "stylers": [{
+                        "color": "#4e6d70"
+                      }]
+            }]
+      });
+      var marker;
+      var marker2;
+      var infowindow = null;
+      {% for mentor in site.data.mentors %}
+      {% for student in site.data.students %}
+          {% if mentor.lat %}
+              marker = new google.maps.Marker({
+                  position: new google.maps.LatLng({{mentor.lat}}, {{mentor.lng}}),
+                  label: 'M',
+                  map: map
+              });
+
+              infowindow = null;
+              var content = "<div><img class='img-rounded' src='images/mentors/{{mentor.image}}' width='240' height='240'><br/>{{mentor.name}}<br/></div>";
+              google.maps.event.addListener(marker, 'click', (function(marker, content) {
+                  return function() {
+                      if (infowindow) {
+                        infowindow.close();
+                      }
+                      infowindow = new google.maps.InfoWindow();
+                      infowindow.setContent(content);
+                      infowindow.open(map, marker);
+                  };
+              })(marker, content));
+          {% endif %}
+          {% if student.lat %}
+              marker2 = new google.maps.Marker({
+                  position: new google.maps.LatLng({{student.lat}}, {{student.lng}}),
+                  label : 'S',
+                  map: map
+              });
+
+              infowindow = null;
+              var content = "<div><img class='img-rounded' src='images/students/{{student.image}}' width='240' height='240'><br/>{{student.name}}<br/></div>";
+              google.maps.event.addListener(marker2, 'click', (function(marker2, content) {
+                  return function() {
+                      if (infowindow) {
+                        infowindow.close();
+                      }
+                      infowindow = new google.maps.InfoWindow();
+                      infowindow.setContent(content);
+                      infowindow.open(map, marker2);
+                  };
+              })(marker2, content));
+          {% endif %}
+      {% endfor %}
+      {% endfor %}
+    };
+    </script>
+
+    <!-- Stop ignoring -->
+    <script src="ism/js/ism-2.2.min.js"></script>
+    <script src="//use.fontawesome.com/7f8b61349a.js" async></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" async></script>
+    <script src="./javascripts/loklak-fetcher.js"></script>
+    <script src="./javascripts/tweet.js"></script>
+</body>
+</html>
