@@ -1,33 +1,33 @@
-.main-content {
+.main-content{
     background-color: white;
 }
-.white-header {
+.white-header{
     color: white;
     margin-bottom: 30px;
 }
-.social-media {
+.social-media{
     text-align: center;
     /*background: #344146;*/
     background: #212121;
     padding-top: 1.4em;
     padding-bottom: 1.4em;
 }
-.social-media iframe, .g-page {
+.social-media iframe, .g-page{
     height: 461px !important;
     -webkit-box-shadow: 3px 3px 5px #151515;
     -moz-box-shadow: 3px 3px 5px #151515;
     -o-box-shadow: 3px 3px 5px #151515;
     box-shadow: 3px 3px 5px #151515;
 }
-.g-page-embed iframe .dgd.nae {
+.g-page-embed iframe .dgd.nae{
     padding-bottom: 50px !important;
 }
-.inner a.button {
+.inner a.button{
     display: inline-block;
     width: 202px;
     height: 80px;
 }
-#contributors-list {
+#contributors-list{
     width: 100%;
     height: 100%;
     margin: auto;
@@ -40,10 +40,10 @@
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
-#contributors-list:hover {
+#contributors-list:hover{
     box-shadow: 1px 5px 20px #888888;
 }
-#contributors h2 {
+#contributors h2{
     text-align: center;
     width: 100%;
     margin: auto;
@@ -56,25 +56,25 @@
     font-size: 18px;
     display: inline-block;
 }
-#contributors-list div img {
+#contributors-list div img{
     width: 200px;
     height: 200px;
 }
-/*#contributors-list div a {
+/*#contributors-list div a{
     position: absolute;
     left: 20px;
     margin-top: 212px;
     color: #000;
     cursor: pointer;
 }
-#contributors-list div .gh-icon {
+#contributors-list div .gh-icon{
     position: absolute;
     top: -3px;
 }*/
-#contributors-list .avatar:hover .contribs {
+#contributors-list .avatar:hover .contribs{
     opacity: 0.8;
 }
-#contributors-list .contribs p {
+#contributors-list .contribs p{
     margin-top: 18px;
     color: #333;
     font-size: 28px;
@@ -82,7 +82,7 @@
 }
 .mentors h2, .students-sec h2, .projects-sec h2, .blogs-sec h2,
 .designs-sec h2, .latest-issues h2, .social-media h2,
-.white-header, .contributors-sec h2 {
+.white-header, .contributors-sec h2{
     background-color: rgba(255,255,255,0.7);
     margin: 0 auto;
     margin-top: 30px;
@@ -111,7 +111,7 @@
 .mentors .mentors-wrapper:hover, .students-sec .students-wrapper:hover, .projects-sec .projects-wrapper:hover, .blogs-sec .blogs-wrapper:hover, .designs-sec .designs-wrapper:hover {
     box-shadow: 1px 5px 20px #888888;
 }
-.mentors .card, #contributors-list .card, .students-sec .card, .projects-sec .card, .blogs-sec .card {
+.mentors .card, #contributors-list .card, .students-sec .card, .projects-sec .card, .blogs-sec .card{
     width: 200px;
     height: 250px;
     margin: 20px auto;
@@ -128,7 +128,7 @@
     display: inline;
 }
 
-.blogs-sec .card {
+.blogs-sec .card{
     width: 500px;
     height: 400px;
     margin: 0;
@@ -146,11 +146,11 @@
 .mentors .card:hover, #contributors-list .card:hover, .students-sec .card:hover, .projects-sec .card:hover, .blogs-sec .card:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.mentors .card p, .students-sec .card p, .projects-sec .card p, .blogs-sec .card p {
+.mentors .card p, .students-sec .card p, .projects-sec .card p, .blogs-sec .card p{
     margin-top: 4.5%;
     font-size: 15px;
 }
-.mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar {
+.mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar{
     position: relative;
     width: 200px;
     height: 200px;
